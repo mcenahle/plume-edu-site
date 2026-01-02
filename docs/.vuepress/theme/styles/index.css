@@ -1,0 +1,146 @@
+:root {
+    /**
+   * 主题色
+   * -------------------------------------------------------------------------- */
+
+    --vp-c-brand-1: #1a6fe7;
+    /* 链接颜色、强调色 */
+    --vp-c-brand-2: #7bb6ff;
+    /* 链接、按钮 hover 颜色 */
+    --vp-c-brand-3: #aad1ff;
+    /* 背景色、边框色 */
+    --vp-c-brand-soft: rgba(161, 249, 255, 0.314);
+    /* 辅助色 */
+
+    /**
+   * 文本颜色
+   * -------------------------------------------------------------------------- */
+
+    --vp-c-text-1: rgba(60, 60, 67);
+    /* 主要文本 */
+    --vp-c-text-2: rgba(60, 60, 67, 0.78);
+    /* 次要文本 */
+    --vp-c-text-3: rgba(60, 60, 67, 0.56);
+    /* 辅助文本 */
+
+    /**
+   * 背景色
+   * -------------------------------------------------------------------------- */
+
+    --vp-c-bg: #fff;
+    /* 主体背景 */
+    --vp-nav-bg-color: #fff;
+    /* 导航栏背景 */
+    --vp-nav-screen-bg-color: #fff;
+    /* 移动端导航栏 */
+    --vp-local-nav-bg-color: #fff;
+    /* 页面内导航栏 */
+    --vp-sidebar-bg-color: #f6f6f7;
+    /* 侧边栏背景 */
+    --vp-code-block-bg: #f6f8fa;
+    /* 代码块背景 */
+}
+
+[data-theme="dark"] {
+
+    /**
+   * 主题色
+   * -------------------------------------------------------------------------- */
+
+    --vp-c-brand-1: #1a6fe7;
+    /* 链接颜色、强调色 */
+    --vp-c-brand-2: #7bb6ff;
+    /* 链接、按钮 hover 颜色 */
+    --vp-c-brand-3: #aad1ff;
+    /* 背景色、边框色 */
+    --vp-c-brand-soft: rgba(131, 208, 218, 0.314);
+    /* 辅助色 */
+
+    /**
+   * 文本颜色
+   * -------------------------------------------------------------------------- */
+
+    --vp-c-text-1: rgba(255, 255, 245, 0.86);
+    /* 主要文本 */
+    --vp-c-text-2: rgba(235, 235, 245, 0.6);
+    /* 次要文本 */
+    --vp-c-text-3: rgba(235, 235, 245, 0.38);
+    /* 辅助文本 */
+
+    /**
+   * 背景色
+   * -------------------------------------------------------------------------- */
+
+    --vp-c-bg: #1b1b1f;
+    /* 主体背景 */
+    --vp-nav-bg-color: #1b1b1f;
+    /* 导航栏背景 */
+    --vp-nav-screen-bg-color: #1b1b1f;
+    /* 移动端导航栏 */
+    --vp-local-nav-bg-color: #1b1b1f;
+    /* 页面内导航栏 */
+    --vp-sidebar-bg-color: #161618;
+    /* 侧边栏背景 */
+    --vp-code-block-bg: #202127;
+    /* 代码块背景 */
+}
+
+@font-face {
+    font-family: 'SourceHanSerifSC-Regular';
+    src: url('/fonts/SourceHanSerifSC-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceHanSansCN-Regular';
+    src: url('/fonts/SourceHanSansCN-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono-Regular';
+    src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+div.vp-doc-container.has-sidebar.has-aside,
+div.vp-page-encrypt,
+div.vp-doc.plume-content._nzzj_2025.external-link-icon-enabled {
+    font-family: 'SourceHanSerifSC-Regular', serif !important;
+}
+
+/* 1-3：修复解锁内容字体显示错误的问题 */
+
+/* ↑ 正文用思源宋体 */
+
+.encrypt-button[data-v-d214ad38] {
+    border-radius: 20px !important;
+}
+
+/* 增大解锁按钮的圆角值 */
+
+header.vp-nav,
+div#navScreen.vp-nav-screen {
+    font-family: 'SourceHanSansCN-Regular';
+}
+
+/* ↑ 移动、电脑端导航栏用思源黑体 */
+
+textarea.code-repl-imput,
+code,
+div.language-python.line-numbers-mode::before,
+code.language-python,
+div.language-html.line-numbers-mode::before,
+code.language-html,
+div.language-css.line-numbers-mode::before,
+code.language-css,
+div.language-js.line-numbers-mode::before,
+code.language-js {
+    font-family: 'JetBrainsMono-Regular';
+}
+
+/* ↑ 代码运行区用 JetBrainsMono-Regular */

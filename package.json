@@ -1,0 +1,37 @@
+{
+  "name": "www-mcenahle-org-cn",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "mcenahle <i@mn.edu.kg>",
+  "license": "MIT",
+  "scripts": {
+    "docs:build": "vuepress build docs --clean-cache --clean-temp",
+    "docs:dev": "vuepress dev docs",
+    "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
+    "docs:preview": "http-server docs/.vuepress/dist",
+    "vp-update": "npx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.26",
+    "@vuepress/shiki-twoslash": "^2.0.0-rc.121",
+    "http-server": "^14.1.1",
+    "typescript": "^5.9.3",
+    "vue": "^3.5.22",
+    "vuepress": "2.0.0-rc.26",
+    "vuepress-theme-plume": "1.0.0-rc.183"
+  },
+  "engines": {
+    "node": "^20.6.0 || >=22.0.0"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "echarts": "^6.0.0",
+    "flowchart.ts": "^3.0.1",
+    "mermaid": "^11.12.1",
+    "ogl": "^1.0.11",
+    "postprocessing": "latest",
+    "pyodide": "^0.29.0",
+    "three": "^0.182.0"
+  }
+}
