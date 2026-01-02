@@ -6,3 +6,4 @@ permalink: /about/mail.html
 
 `@mn.edu.kg` 邮箱仅本人使用。本人发送的邮箱为：`i@mn.edu.kg`。
 
+本邮箱不主动接收邮件。
